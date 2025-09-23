@@ -1,0 +1,26 @@
+
+/* Styles for articles list*/
+.articlePreview>div:hover {
+    background-color: #ffeace;
+}
+
+.articlePreview>div {
+    display: flex;
+    width: 65%;
+    margin: auto;
+    column-gap: 3%;
+    padding: 15px;
+}
+
+.articlePreview:hover {
+    text-decoration: none;
+}
+
+.blogDiv {
+    height: 1px;
+    border-width: 2px;
+    border-style: dashed;
+    width: 65%;
+    margin: auto;
+    color: #a0744f;
+}

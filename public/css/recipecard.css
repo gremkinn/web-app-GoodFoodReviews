@@ -1,0 +1,58 @@
+/* Styles for recipe card container*/
+#recipeCard {
+    width: 60%;
+    margin: auto;
+    outline-width: 2px;
+    outline-color: #005247;
+    outline-style: solid;
+}
+
+#recipeDescDiv {
+    background-color: #005247;
+    padding: 25px;
+    display: flex;
+}
+
+#recipeImg {
+    background-color: white;
+    padding: 10px;
+    height: 200px;
+}
+
+/*Styles for ingredients checkboxes*/
+input[type="checkbox"] {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    margin-bottom: -1px;
+    border-color: #005247;
+    border-width: 2px;
+    border-style: solid;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.container>input:hover {
+    transform: scale(1.2);
+}
+
+.container>input:checked {
+    background-color: #005247;
+}
+
+/*Styles for submit button*/
+#submitbutton {
+    padding: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #ff9933;
+    color: #005247;
+    margin: auto;
+    font-size: large;
+}
+
+#submitbutton:hover {
+    color: black;
+    font-size: larger;
+}

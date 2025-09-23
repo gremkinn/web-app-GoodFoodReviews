@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!--JS Link-->
+    <script src="js/about.js"></script>
+    <script src="js/universal.js"></script>
+
+    <!--Bootstrap Framework-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!--CSS Links-->
+    <link rel="stylesheet" href="css/universal.css" />
+    <link rel="stylesheet" href="css/about.css" />
+
+</head>
+
+<body onload="checkUserHome()">
+
+    <!--Menu Bar Codes-->
+    <nav>
+        <div class="menubar">
+            <!--Logo-->
+            <div><img src="images/logowhite.png" alt="Good Food" style="height: 35px;"></div>
+
+            <!--Nav Links-->
+            <div id="navlinks"><a class="active" href="home.html">Home</a>
+                <span>|</span>
+                <a href="restaurants.html">Restaurants</a>
+                <span>|</span>
+                <a href="blog.html">Blog</a>
+                <span>|</span>
+                <a href="recipes.html">Recipes</a>
+            </div>
+
+            <!--Login Button-->
+            <div id="login"><a href="userlogin.html">Login</a></div>
+        </div>
+    </nav>
+
+    <!--Divider--><div class="brownDiv"></div>
+
+    <!--Banner image container-->
+    <div id="teamContainer"><br><br><img src="images/team.png" style="width: 60%;"></div>
+
+<!--Page title container-->
+    <div id="headingDiv">
+        <h2 class="subheading" style="color: white;">About Us</h2>
+    </div><br><br>
+
+    <!---About text body-->
+    <p class="bodytext" id="aboutPassage">Welcome to Good Food, your
+        go-to source for all things culinary in Singapore! Founded by a team of passionate
+        food enthusiasts, our mission is to guide you through the vibrant food culture of our city. We provide a
+        platform where food lovers can share their experiences and discover new dining spots through
+        user-generatedreviews.<br><br>Good Food offers comprehensive and honest food reviews from everyday diners just
+        like you. Covering a wide spectrum of dining experiences from hawker stalls to fine dining establishments, our
+        platform allows users to provide authentic insights into their meals.<br><br>
+        Choose us for our vibrant community of food enthusiasts who share their unique culinary adventures. Our platform
+        fosters a diverse range of cuisines and dining styles, ensuring there's something for everyone. We encourage our
+        readers to join in, share their own food experiences, and discover new favorites.</p><br><br>
+
+        <!--Careers content-->
+    <div id="careers"><br>
+
+        <h2 class="subheading" style="color: white;">Careers</h2><br>
+
+        <div id="careersInnerDiv">
+
+            <div style="margin-left: 50px;">
+
+                <h2 class="subheading" style="color:#ff9933; text-align: left;font-size: 35px;">Work with us</h2>
+
+                <p class="bodytext" style="text-align: left;font-size: large;color: #ffeace;">Explore remote-friendly, flexible opportunities and join our mission to share good food & great experiences.</p>
+            </div>
+
+            <img src="images/careers.png" style="height:250px;padding: 15px;border-radius: 30px;">
+        </div><br>
+
+        <p class="bodytext" style="color: white;font-size:x-large;">We are where the future works.</p><br>
+        <div id="careerAspects">
+
+            <div style="width: 15%;"><img src="images/connection.png" style="width: 60px;">
+
+                <p class="bodytext" style="color: white;font-size:large">Connected</p>
+                <p class="bodytext" style="color: #ffeace;">We come together whereever we are - across districts,restaurants & cafes.</p>
+            </div>
+
+            <div style="width: 15%;"><img src="images/puzzle.png" style="width: 60px;">
+
+                <p class="bodytext" style="color: white;font-size:large">Inclusive</p>
+                <p class="bodytext" style="color: #ffeace;">Our team reflects the rich diversity of our country, with equal access to opportunities.</p>
+            </div>
+
+            <div style="width: 15%;"><img src="images/clock.png" style="width: 60px;">
+                <p class="bodytext" style="color: white;font-size:large">flexible</p>
+                <p class="bodytext" style="color: #ffeace;">We believe in your freedom to work when and how you work best, to help us all thrive.</p>
+            </div>
+        </div><br>
+    </div><br><br>
+
+<!--Contact US section-->
+    <form id="contact">
+        <fieldset>
+            <legend class="subheading" style="width: 40%;">Contact Us</legend>
+
+            <p class="bodytext" style="font-size: larger;">Get in touch with us,for anything food related or even exciting job opportunities!</p><br>
+
+            <div class="formDiv" style="flex-direction: row;"><br><br>
+
+                <div class="bodytext" id="formlabels">
+                    <label for="name">Name:</label><br><br>
+                    <label for="Email" style="margin-top: 8px;">Email:</label><br><br>
+                    <label for="telnum" style="margin-top: 6px;">Tel No.:</label><br><br>
+                    <label for="enquiry" style="margin-top: 4px;">Enquiry:</label>
+                </div>
+
+                <div style="width: 65%;">
+                    <input class='userFormInput' style="width: 100%;height: auto;" type="text" name="name"
+                        id="enquiryName" required><br><br>
+
+                    <input class='userFormInput' style="width: 100%;height: auto;" type="text" name="email" id='email' required><br><br>
+
+                    <input class='userFormInput' style="width: 100%;height: auto;" type="text" name="telnum"
+                        id="telnum"><br><br>
+
+                    <textarea class='userFormInput' style="width: 100%;height: auto;" name="enquiry" rows="5"
+                        placeholder="How can we help you?" id="enquiry" required></textarea><br><br>
+                </div>
+            </div>
+
+            <input id="submitbutton" type="submit" value="Submit" style="width: 20%;" onclick="submitContact()"><br><br>
+
+            <div id="contactOptions">
+                <img src="images/whatsappicon.png">
+                <p class="bodytext">+65 9091 6525<br><i style="font-size:small;">For messages only</i></p>
+                <img src="images/email.png">
+                <p class="bodytext">contact@goodfood.com</p>
+                <img src="images/location.png">
+                <p class="bodytext">21 Tampines Ave 1,<br>Singapore 529757<br><i style="font-size:small;">By appointment
+                        only</i>
+                </p>
+            </div>
+        </fieldset>
+    </form><br><br>
+
+    <!--Divider--><div class="greenDiv"></div>
+
+    <!--Footer-->
+    <div id="footer">
+        <div>CONTENT<br>
+            <a href="restaurants.html">Restaurants</a><br>
+            <a href="blog.html">Blog</a><br>
+            <a href="recipes.html">Recipes</a><br>
+        </div>
+
+        <div>INFORMATION<br>
+            <a href="about.html">About</a><br>
+            <a href="about.html#careers">Careers</a><br>
+            <a href="about.html#contact">Contact Us</a><br>
+        </div>
+
+        <div>USERS<br>
+            <a href="userlogin.html">Login</a><br>
+            <a href="usersignup.html">Register</a><br>
+        </div>
+
+        <div><br><a href="http://www.facebook.com"><img src="images/fbicon.png"></a>
+            <a href="http://www.instagram.com"><img src="images/instaicon.png"></a>
+            <a href="http://www.tiktok.com"><img src="images/tiktokicon.png"></a><br>
+            ©2024 GoodFood Inc
+        </div>
+    </div>
+</body>
+</html>

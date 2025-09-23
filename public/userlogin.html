@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!--CSS Links-->
+    <link rel="stylesheet" href="css/universal.css" />
+
+    <!--JS Link-->
+    <script src="js/userlogin.js"></script>
+    <script src="js/universal.js"></script>
+
+    <!--Bootstrap Framework-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <style>
+        /*Style for password toggle button*/
+        #pwToggle {
+            width: 20px;
+            margin-left: -35px;
+            margin-bottom: 2px;
+        }
+
+        /*Styles for form divider*/
+        .formSeparator {
+            background-color: #a0744f;
+            height: 1.5px;
+            width: 23%
+        }
+
+        /*Style for form background/container*/
+        #loginForm {
+            background-color: white;
+            width: 450px;
+            text-align: center;
+        }
+
+        /*Link style*/
+        #signUpLink {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+</head>
+
+<body style="background-color: #ffeace;" onload="checkUserHome()">
+
+    <!--Menu Bar Codes-->
+    <nav>
+        <div class="menubar">
+            <!--Logo-->
+            <div><img src="images/logowhite.png" alt="Good Food" style="height: 35px;"></div>
+
+            <!--Nav Links-->
+            <div id="navlinks"><a class="active" href="home.html">Home</a>
+                <span>|</span>
+                <a href="restaurants.html">Restaurants</a>
+                <span>|</span>
+                <a href="blog.html">Blog</a>
+                <span>|</span>
+                <a href="recipes.html">Recipes</a>
+            </div>
+
+            <!--Login Button-->
+            <div id="login"><a href="userlogin.html">Login</a></div>
+        </div>
+    </nav>
+
+    <!--Divider-->
+    <div class="brownDiv"></div><br><br>
+
+    <!--Left side of form with images-->
+    <div class="formDiv">
+        <div>
+            <img id='formImage' style="height: 550px;" src='images/form1.png' onmouseover="imageChange()">
+        </div>
+
+        <!--Right side of form with input fields-->
+        <div id="loginForm"><br><br>
+
+            <h2 class="subheading">Welcome back</h2>
+            <p class="bodytext" style="font-size: larger;">Login to your account</p><br>
+
+            <form>
+                <label style='margin-bottom: 0;' class="bodytext" for="email">Email</label><br>
+                <input class='userFormInput' type="text" id="email" name="email" required><br>
+                <label style='margin-bottom: 0;' class="bodytext" for="password">Password</label><br>
+                <input class='userFormInput' type="password" id="password" name="password" style="margin-left: -10px;"
+                    required>
+
+                <img id='pwToggle' src="images/pwhide.png" onclick="passwordToggle()"><br><br>
+                <input id="submitbutton" type="submit" value="Submit" onclick="userLogin()">
+            </form><br><br>
+
+            <!--Link to sign up page section-->
+            <div id="signUpLink">
+                <div class="formSeparator"></div>
+                <div class='bodytext' style="margin-top: -5px;color: #a0744f;">&nbsp;&nbsp;or&nbsp;&nbsp;</div>
+                <div class="formSeparator"></div>
+            </div><br>
+
+            <p class="bodytext" style="font-size: larger;margin-top: 15px;">New here? <a style='color:#005247;'
+                    href='usersignup.html'>Create an account.</a></p>
+
+        </div>
+    </div><br><br>
+
+    <!--Divider-->
+    <div class="greenDive"></div>
+
+    <!--Footer-->
+    <div id="footer">
+        <div>CONTENT<br>
+            <a href="restaurants.html">Restaurants</a><br>
+            <a href="blog.html">Blog</a><br>
+            <a href="recipes.html">Recipes</a><br>
+        </div>
+
+        <div>INFORMATION<br>
+            <a href="about.html">About</a><br>
+            <a href="about.html#careers">Careers</a><br>
+            <a href="about.html#contact">Contact Us</a><br>
+        </div>
+
+        <div>USERS<br>
+            <a href="userlogin.html">Login</a><br>
+            <a href="usersignup.html">Register</a><br>
+        </div>
+
+        <div><br><a href="http://www.facebook.com"><img src="images/fbicon.png"></a>
+            <a href="http://www.instagram.com"><img src="images/instaicon.png"></a>
+            <a href="http://www.tiktok.com"><img src="images/tiktokicon.png"></a><br>
+            ©2024 GoodFood Inc
+        </div>
+    </div>
+</body>
+
+</html>

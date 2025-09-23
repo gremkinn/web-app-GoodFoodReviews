@@ -1,0 +1,270 @@
+body {
+    margin: 0px;
+}
+
+/*Menu Bar Background Color*/
+.menubar {
+    display: flex;
+    background-color: #005247;
+    overflow: hidden;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navlinks {
+    position: relative;
+    right: 40px;
+}
+
+/*Menu Bar Divider Style*/
+.menubar span {
+    color: #ffeace;
+    font-family: "Futura Md BT", sans-serif;
+}
+
+/*Link Styles-Default*/
+.menubar a {
+    color: #ffeace;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Futura Md BT", sans-serif;
+}
+
+/*Link Styles-Hover*/
+.menubar a:hover {
+    color: #ff9933;
+    font-size: 22px;
+}
+
+/*Link Styles-Active*/
+.menubar a.active {
+    color: white;
+    font-size: 22px;
+}
+
+/*Login Text Color-Default*/
+#login a {
+    color: #005247;
+    border-radius: 30px;
+    background-color: #ff9933;
+    padding-top: 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 8px;
+    font-size: 20px;
+}
+
+/*Login Text Color-Hover*/
+#login a:hover {
+    color: black;
+    font-size: 22px;
+}
+
+/*Search Bar Styles*/
+#search {
+    width: 335px;
+    padding: 7px;
+    padding-left: 10px;
+    border-radius: 10px;
+    color: #a0744f;
+    border-width: 2px;
+    border-color: #a0744f;
+    font-family: 'Futura Md BT', sans-serif;
+    outline: none;
+    clear: both;
+    position: relative;
+    right: -11px;
+}
+
+/*Search Button Styles*/
+#search+button {
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: none;
+    align-content: right;
+    position: relative;
+    top: -1px;
+    right: 25px;
+}
+
+#search+button:hover {
+    opacity: 50%;
+}
+
+/*Text Styles*/
+.subheading {
+    color: #005247;
+    font-family: 'Futura Md BT', sans-serif;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.bodytext {
+    font-family: 'Futura Md BT', sans-serif;
+    color: black;
+}
+
+/*Divider Styles*/
+.brownDiv {
+    background-color: #a0744f;
+    height: 5px;
+}
+
+.greenDiv {
+    background-color: #005247;
+    height: 5px;
+}
+
+/*Restaurant Grid Styles*/
+.restogrid {
+    display: grid;
+    column-gap: 100px;
+    row-gap: 50px;
+    grid-template-columns: 250px 250px 250px;
+    justify-content: center;
+}
+
+.restogrid-item {
+    background-color: #a0744f;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 8px 8px 1px rgba(209, 209, 209, 0.362);
+}
+
+.gridimg {
+    width: 250px;
+}
+
+.rating {
+    width: 100px;
+}
+
+.gridheading {
+    font-family: 'Futura Md BT', sans-serif;
+    color: white;
+    font-weight: normal;
+    margin: 10px;
+}
+
+.restogrid-item>p {
+    font-family: 'Futura Md BT', sans-serif;
+    color: black;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.restogrid-item>a {
+    color: #005247;
+    background-color: #ff9933;
+    text-decoration: none;
+    font-family: 'Futura Md BT', sans-serif;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 107.5px;
+    padding-right: 107.5px;
+}
+
+.restogrid-item>a:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #005247;
+}
+
+/*Review Grid Styles*/
+.reviewgrid {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    column-gap: 10%;
+    row-gap: 25px;
+    grid-auto-flow: row dense;
+}
+
+/*Footer Styles*/
+#footer {
+    background-color: #a0744f;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    font-family: 'Futura Md BT', sans-serif;
+    font-size: 15px;
+    color: white;
+}
+
+#footer>div>a {
+    text-decoration: none;
+    color: #ffeace;
+    font-size: 14px;
+}
+
+#footer>div>a>img {
+    height: 30px;
+    padding-right: 5px;
+}
+
+#footer>div>a:hover {
+    opacity: 75%;
+}
+
+
+/*Styles for various forms & its contents*/
+.formDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.userFormInput {
+    width: 60%;
+    height: 3%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    color: #a0744f;
+    border-width: 2px;
+    border-color: #a0744f;
+    font-family: 'Futura Md BT', sans-serif;
+    outline: none;
+    border-style: solid;
+}
+
+.ratingRadio {
+    appearance: none;
+}
+
+.Radio {
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #a0744f;
+    border-radius: 50%;
+    outline: none;
+    margin-bottom: -1px;
+}
+
+.Radio:checked {
+    background-color: #a0744f;
+}
+
+/*Button styles*/
+#submitbutton {
+    color: white;
+    font-size: 15px;
+    width: 30%;
+    background-color: #005247;
+    border-radius: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-family: 'Futura Md BT', sans-serif;
+    border: none;
+}
+
+#submitbutton:hover {
+    font-size: 18px;
+    color: #ff9933;
+}
+

@@ -1,0 +1,41 @@
+/*Styles for main header/banner section*/
+#homesearch {
+    display: flex;
+    background-image: url("../images/homeheader.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bannerText {
+    color: white;
+    font-family: 'Futura Md BT', sans-serif;
+    font-size: 40px;
+    text-shadow: 2px 2px black;
+}
+
+/*Styles for discover button*/
+#discoverlink {
+    text-align: center;
+}
+
+#discoverlink>a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    background-color: #005247;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-family: 'Futura Md BT', sans-serif;
+}
+
+#discoverlink>a:hover {
+    font-size: 28px;
+    color: #ff9933;
+}

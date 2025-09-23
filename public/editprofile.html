@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!--CSS Links-->
+    <link rel="stylesheet" href="css/universal.css" />
+
+    <!--JS Link-->
+    <script src="js/universal.js"></script>
+    <script src="js/editprofile.js"></script>
+
+    <!--Bootstrap Framework-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <style>
+
+        #inputFields {
+            background-color: white;
+            width: 450px;
+            text-align: center;
+        }
+
+        #pwToggle {
+            width: 20px;
+            margin-left: -35px;
+            margin-bottom: 2px;
+        }
+
+    </style>
+
+</head>
+
+<body onload="loadUserProfile()" onbeforeunload="deletePassword()" style="background-color: #ffeace;">
+
+    <!--Menu Bar Codes-->
+    <nav>
+        <div class="menubar">
+            <!--Logo-->
+            <div><img src="images/logowhite.png" alt="Good Food" style="height: 35px;"></div>
+
+            <!--Nav Links-->
+            <div id="navlinks"><a class="active" href="home.html">Home</a>
+                <span>|</span>
+                <a href="restaurants.html">Restaurants</a>
+                <span>|</span>
+                <a href="blog.html">Blog</a>
+                <span>|</span>
+                <a href="recipes.html">Recipes</a>
+            </div>
+
+            <!--Login Button-->
+            <div id="login"><a href="userlogin.html">Login</a></div>
+        </div>
+    </nav>
+
+    <!--Divider-->
+    <div class="brownDiv"></div><br><br>
+
+    <!--Form to edit user's profile that is initially populated with data from the database-->
+    <div class="formDiv">
+        <div>
+            <img id='formImage' style="height: 588px;" src='images/form1.png' onmouseover="imageChange()">
+        </div>
+        <div id="inputFields"><br>
+            <h2 class="subheading">Edit Your Profile</h2><br>
+
+            <form>
+                <label style='margin-bottom: 0;' class="bodytext" for="fname">First Name</label><br>
+                <input class='userFormInput' type="text" id="fname" name="fname" required><br>
+
+                <label style='margin-bottom: 0;' class="bodytext" for="fname">Last Name</label><br>
+                <input class='userFormInput' type="text" id="lname" name="lname"><br>
+
+                <label style='margin-bottom: 0;' class="bodytext" for="email">Email</label><br>
+                <input class='userFormInput' type="text" id="email" name="email" required><br>
+
+                <label style='margin-bottom: 0;' class="bodytext" for="bio">Bio</label><br>
+                <textarea class='userFormInput' style="resize: none;" id="bio" name="bio" rows="3"></textarea><br>
+
+                <label style='margin-bottom: 0;' class="bodytext" for="password">Password</label><br>
+                <input class='userFormInput' type="text" id="password" placeholder="Enter password to save." name="password" style="margin-left: -10px;" required>
+
+                <img id='pwToggle' src="images/pwshow.png" onclick="passwordToggle()"><br><br>
+
+                <input id="submitbutton" type="submit" value="Submit" onclick="saveProfileUpdates()">
+            </form><br>
+
+        </div>
+    </div><br><br>
+
+    <!--Divider-->
+    <div class="greenDiv"></div>
+
+    <!--Footer-->
+    <div id="footer">
+        <div>CONTENT<br>
+            <a href="restaurants.html">Restaurants</a><br>
+            <a href="blog.html">Blog</a><br>
+            <a href="recipes.html">Recipes</a><br>
+        </div>
+
+        <div>INFORMATION<br>
+            <a href="about.html">About</a><br>
+            <a href="about.html#careers">Careers</a><br>
+            <a href="about.html#contact">Contact Us</a><br>
+        </div>
+
+        <div>USERS<br>
+            <a href="userlogin.html">Login</a><br>
+            <a href="usersignup.html">Register</a><br>
+        </div>
+
+        <div><br><a href="http://www.facebook.com"><img src="images/fbicon.png"></a>
+            <a href="http://www.instagram.com"><img src="images/instaicon.png"></a>
+            <a href="http://www.tiktok.com"><img src="images/tiktokicon.png"></a><br>
+            ©2024 GoodFood Inc
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!--CSS Links-->
+    <link rel="stylesheet" href="css/universal.css" />
+    <link rel="stylesheet" href="css/blog.css" />
+
+    <!--JS Link-->
+    <script src="js/universal.js"></script>
+    <script src="js/blog.js"></script>
+
+    <!--Bootstrap Framework-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</head>
+
+<body onload="loadArticles()">
+
+    <!--Menu Bar Codes-->
+    <nav>
+        <div class="menubar">
+            <!--Logo-->
+            <div><img src="images/logowhite.png" alt="Good Food" style="height: 35px;"></div>
+
+            <!--Nav Links-->
+            <div id="navlinks"><a class="active" href="home.html">Home</a>
+                <span>|</span>
+                <a href="restaurants.html">Restaurants</a>
+                <span>|</span>
+                <a href="blog.html">Blog</a>
+                <span>|</span>
+                <a href="recipes.html">Recipes</a>
+            </div>
+
+            <!--Login Button-->
+            <div id="login"><a href="userlogin.html">Login</a></div>
+        </div>
+    </nav>
+
+    <!--Divider--><div class="brownDiv"></div><br><br>
+
+    <!--Long Search Bar Content-->
+    <form style="text-align: center;">
+        <input type="search" id="search" name="search" placeholder="Search" style="width: 700px;">
+        <button type="submit"><img id="searchicon" src='images/searchicon.png' style="height: 20px;"></button>
+    </form><br><br>
+
+    <!--Subheading-->
+    <h2 class="subheading" id="recipeTitle" style="text-align: center;">Food News & More</h2><br>
+
+    <div id="articleList">
+        <!--Populate this div with articles using dynamic insert-->
+    </div><br>
+
+    <!--Divider-->
+    <div class="greenDiv"></div>
+
+    <!--Footer-->
+    <div id="footer">
+        <div>CONTENT<br>
+            <a href="restaurants.html">Restaurants</a><br>
+            <a href="blog.html">Blog</a><br>
+            <a href="recipes.html">Recipes</a><br>
+        </div>
+
+        <div>INFORMATION<br>
+            <a href="about.html">About</a><br>
+            <a href="about.html#careers">Careers</a><br>
+            <a href="about.html#contact">Contact Us</a><br>
+        </div>
+
+        <div>USERS<br>
+            <a href="userlogin.html">Login</a><br>
+            <a href="usersignup.html">Register</a><br>
+        </div>
+
+        <div><br><a href="http://www.facebook.com"><img src="images/fbicon.png"></a>
+            <a href="http://www.instagram.com"><img src="images/instaicon.png"></a>
+            <a href="http://www.tiktok.com"><img src="images/tiktokicon.png"></a><br>
+            ©2024 GoodFood Inc
+        </div>
+    </div>
+
+</body>
+
+</html>

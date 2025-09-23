@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!--CSS Links-->
+    <link rel="stylesheet" href="css/universal.css" />
+
+    <!--JS Link-->
+    <script src="js/editreview.js"></script>
+    <script src="js/universal.js"></script>
+
+    <!--Bootstrap Framework-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</head>
+
+<body onload="editReviewLoad()">
+
+    <!--Menu Bar Codes-->
+    <nav>
+        <div class="menubar">
+            <!--Logo-->
+            <div><img src="images/logowhite.png" alt="Good Food" style="height: 35px;"></div>
+
+            <!--Nav Links-->
+            <div id="navlinks"><a class="active" href="home.html">Home</a>
+                <span>|</span>
+                <a href="restaurants.html">Restaurants</a>
+                <span>|</span>
+                <a href="blog.html">Blog</a>
+                <span>|</span>
+                <a href="recipes.html">Recipes</a>
+            </div>
+
+            <!--Login Button-->
+            <div id="login"><a href="userlogin.html">Login</a></div>
+        </div>
+    </nav>
+
+    <!--Divider--><div class="brownDiv"></div><br><br>
+
+    <!--Page title--><h2 class="subheading" style="text-align: center;">Edit Your Review</h2><br>
+
+    <!--Form populated with data from database for user to edit their review-->
+    <form style="text-align: center;">
+        <div class="formDiv" style="flex-direction: row;"><br><br>
+            <div class="bodytext" style="font-size: larger;text-align: start;width:10%">
+                <label for="rname">Restaurant:</label><br><br>
+                <label>Rating:</label><br><br>
+                <label for="review">Review:</label>
+            </div>
+
+            <div style="width: 40%;">
+                <input class='userFormInput' style="width: 100%;height: auto;" type="text" id="rname" name="rname"
+                    value="" readonly><br><br>
+
+                    <!--Radio buttons to select rating-->
+                <div style="display: flex;justify-content: start;">
+                    <label><input onchange="radioChange()" id='rr1' class='ratingRadio' type="radio" name="ratingRadio"
+                            value="1"><img style="height: 30px;" id="rr1img" src="images/ratingradio/start.png"></label>
+
+                    <label><input onchange="radioChange()" id='rr2' class='ratingRadio' type="radio" name="ratingRadio"
+                            value="2"><img style="height: 30px;" id="rr2img" src="images/ratingradio/mid.png"></label>
+
+                    <label><input onchange="radioChange()" id='rr3' class='ratingRadio' type="radio" name="ratingRadio"
+                            value="3"><img style="height: 30px;" id="rr3img" src="images/ratingradio/mid.png"></label>
+
+                    <label><input onchange="radioChange()" id='rr4' class='ratingRadio' type="radio" name="ratingRadio"
+                            value="4"><img style="height: 30px;" id="rr4img" src="images/ratingradio/mid.png"></label>
+
+                    <label><input onchange="radioChange()" id='rr5' class='ratingRadio' type="radio" name="ratingRadio"
+                            value="5"><img style="height: 30px;" id="rr5img" src="images/ratingradio/end.png"></label>
+                </div>
+                <br>
+
+                <textarea class='userFormInput' style="width: 100%;height: auto;" id="review" name="review" rows="8"
+                    placeholder="Tell us what you think about this restaurant."></textarea>
+            </div>
+        </div><br>
+        <input id="submitbutton" style="width:10%;" type="submit" value="Submit" onclick="saveReviewUpdate()">
+    </form><br><br>
+
+    <!--Divider-->
+    <div class="greenDiv"></div>
+
+    <!--Footer-->
+    <div id="footer">
+        <div>CONTENT<br>
+            <a href="restaurants.html">Restaurants</a><br>
+            <a href="blog.html">Blog</a><br>
+            <a href="recipes.html">Recipes</a><br>
+        </div>
+
+        <div>INFORMATION<br>
+            <a href="about.html">About</a><br>
+            <a href="about.html#careers">Careers</a><br>
+            <a href="about.html#contact">Contact Us</a><br>
+        </div>
+
+        <div>USERS<br>
+            <a href="userlogin.html">Login</a><br>
+            <a href="usersignup.html">Register</a><br>
+        </div>
+
+        <div><br><a href="http://www.facebook.com"><img src="images/fbicon.png"></a>
+            <a href="http://www.instagram.com"><img src="images/instaicon.png"></a>
+            <a href="http://www.tiktok.com"><img src="images/tiktokicon.png"></a><br>
+            ©2024 GoodFood Inc
+        </div>
+    </div>
+</body>
+
+</html>
