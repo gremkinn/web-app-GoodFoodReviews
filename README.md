@@ -1,5 +1,5 @@
 # Good Food Restaurant Reviews website
-(Academic Project) Good Food offers comprehensive and honest food reviews from everyday diners.
+(Academic Project) Good Food offers comprehensive and honest food reviews from everyday diners. This project was developed using Visual Code Studio.
 
 ## Site Navigation Diagram 
 <br>
